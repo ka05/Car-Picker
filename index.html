@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 1 - Client</title>
+  <link rel='shortcut icon' type='image/x-icon' href='img/favicon/favicon.jpg' />
+  <script type="text/javascript" src="js/json2.js"></script>
+  <script type="text/javascript" src="js/browserDetect.js"></script>
+  <!-- ie conditionals -->
+
+  <script type="text/javascript">
+    var ieSeven = false;
+  </script>
+
+  <!--[if lt IE 8]>
+	<script>
+	var ieSeven = true;
+	</script>
+    <![endif]-->
+	<script type="text/javascript" src="js/cookies.js"></script>
+	<script type="text/javascript" src="js/helper.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="data/carData1.js"></script>
+	<script type="text/javascript" src="data/carData2.js"></script>
+	<script type="text/javascript" src="data/carData3.js"></script>
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/project-ie.css" />
+  <![endif]-->
+  <!--[if !IE]><!-->
+  <link rel="stylesheet" type="text/css" href="css/project.css">
+  <!--<![endif]-->
+
+</head>
+<body onload="preloadCart();">
+<!--<body>-->
+	<div id="msg-panel"></div>
+	<div id="header">
+		<div id="cart-sect" onclick="toggleCart('cart-div');">
+			<img src="img/cart.png" height="35" id="cart">
+			<div id="cart-item-num"></div>
+		</div>
+		<h1 id="header-h1">Purchase A Vehicle</h1>
+    <div style="clear:both;"></div>
+	</div><!-- /header -->
+	<div id="cart-div" style="height:0px;"></div>
+	<div id="main-cont">
+		<div id="splash-div">
+			<!-- (changes data source) -->
+			<h3 title="(changes data source)" id="splash-h3">Choose Manufacturer Location</h3>
+			<input class="splash-btn red-white" type="button" onclick="init(manufacturer);" value="Japanese" />
+			<input class="splash-btn red-white" type="button" onclick="init(manufacturer2);" value="American" />
+			<input class="splash-btn red-white" type="button" onclick="init(manufacturer3);" value="European" />
+		</div>
+		<div class="f-left">
+			<div id="build-car-form"></div>
+		</div>
+		<div class="inner-cont">
+			<div id="main-display">
+				<div id="logo-display"></div>
+				<hr>
+				<div id="mod-display"></div>
+			</div>
+			<form id="car-form" action="index.html" method="POST" onsubmit="return addToCart();">
+				<div id="output-div"></div>
+			</form>
+			<div class="clearfix"></div>
+			<hr>
+		</div>
+	</div>
+	<div id="overlay"></div>
+	<div id="footer">
+		<h4 id="footer-h4"><span class="light-txt">Created and Developed by:</span> Clay Herendeen</h4>
+	</div>
+</body>
+</html>

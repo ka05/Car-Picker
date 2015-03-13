@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'capture_itregular';
+  src: url("../fonts/Capture_it-webfont.eot");
+  src: url("../fonts/Capture_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Capture_it-webfont.woff") format("woff"), url("../fonts/Capture_it-webfont.ttf") format("truetype"), url("../fonts/Capture_it-webfont.svg#capture_itregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #FFF;
+  background: #7f2811; }
+
+::selection {
+  color: #FFF;
+  background: #7f2811; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+*:focus {
+  outline: 0; }
+
+.clearfix {
+  clear: both; }
+
+.light-txt {
+  font-weight: 100;
+  color: #e0e0e0;
+  letter-spacing: 5px; }
+
+body {
+  background: #7f2811;
+  font-family: capture_itregular; }
+  body input[type=button] {
+    cursor: pointer; }
+  body #footer {
+    background: #7f2811;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0px; }
+  body #msg-panel {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    visibility: hidden; }
+    body #msg-panel .loading-div {
+      background-color: #d7c920;
+      font-weight: bold;
+      border-radius: 0px 0px 2px 2px;
+      padding: 8px 15px;
+      box-shadow: 0px 0px 4px 1px #333333; }
+  body #header {
+    background: #7f2811;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    body #header.active-small-left {
+      text-align: left; }
+    body #header #cart-sect {
+      float: right;
+      display: inline;
+      border-radius: 5px; }
+      body #header #cart-sect:hover {
+        background: #5a1c0c;
+        cursor: pointer; }
+      body #header #cart-sect #cart {
+        padding: 5px 7px 4px 7px; }
+    body #header #cart-item-num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 14px;
+      font-family: Arial;
+      background: #000;
+      color: #FFF;
+      border-radius: 10px;
+      padding: 2px 6px; }
+  body #cart-div {
+    position: fixed;
+    top: 70px;
+    overflow-y: scroll;
+    z-index: 3;
+    right: 0;
+    left: 0;
+    padding: 0px;
+    background: #e0e0e0;
+    font-family: Arial;
+    font-size: 14px;
+    font-variant: small-caps;
+    box-shadow: 0px 0px 8px 2px #000; }
+    body #cart-div h3 {
+      text-align: center; }
+    body #cart-div .cart-img {
+      width: 140px;
+      background: white;
+      border-radius: 5px; }
+    body #cart-div .cart-img-cont {
+      float: left;
+      width: 144px;
+      margin: 10px;
+      font-size: 16px;
+      text-align: center; }
+      body #cart-div .cart-img-cont .cart-img-div {
+        position: relative; }
+      body #cart-div .cart-img-cont .remove-cart-btn {
+        position: absolute;
+        top: 0px;
+        right: 2px;
+        background: rgba(255, 0, 0, 0);
+        color: #7f2811;
+        padding: 2px 5px;
+        border-radius: 2px;
+        font-size: 14px;
+        border: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body #cart-div .cart-img-cont .remove-cart-btn:hover {
+          background: #7f2811;
+          color: #FFF; }
+    body #cart-div .cart-span {
+      height: 20px;
+      display: block; }
+  body #main-cont {
+    padding: 5px;
+    background: #e0e0e0;
+    color: #777777;
+    font-size: 20px;
+    z-index: 1;
+    padding-bottom: 30px; }
+    body #main-cont select, body #main-cont input {
+      font-size: 18px;
+      font-variant: normal;
+      margin-bottom: 5px;
+      border: 2px solid #777777;
+      border-radius: 2px;
+      color: #777777;
+      padding: 10px;
+      width: 240px; }
+    body #main-cont input[type=button] {
+      font-variant: small-caps; }
+    body #main-cont .f-left {
+      float: left;
+      padding: 10px;
+      margin-top: 80px;
+      position: fixed; }
+    body #main-cont .inner-cont {
+      margin: 20px;
+      margin-left: 280px; }
+      body #main-cont .inner-cont #main-display #mod-display {
+        margin-top: 10px; }
+        body #main-cont .inner-cont #main-display #mod-display .car-img {
+          background: white;
+          margin: 10px;
+          border-radius: 5px;
+          width: 200px;
+          height: 80px;
+          float: left;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          body #main-cont .inner-cont #main-display #mod-display .car-img.invisible {
+            opacity: 0; }
+            body #main-cont .inner-cont #main-display #mod-display .car-img.invisible.hidden {
+              display: none; }
+        body #main-cont .inner-cont #main-display #mod-display .large-car-img {
+          background: white;
+          margin: 10px;
+          border-radius: 5px;
+          float: left;
+          width: 500px;
+          height: 200px;
+          margin-bottom: 15px; }
+      body #main-cont .inner-cont #main-display #logo-display {
+        text-align: left;
+        margin: 10px; }
+        body #main-cont .inner-cont #main-display #logo-display .logo-img {
+          width: 250px; }
+      body #main-cont .inner-cont #output-div {
+        color: #333333;
+        float: left;
+        margin-left: 10px;
+        max-width: 300px; }
+        body #main-cont .inner-cont #output-div input.red-white {
+          background: #7f2811;
+          color: #FFF;
+          border-radius: 5px;
+          border: 4px solid #7f2811;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          body #main-cont .inner-cont #output-div input.red-white:hover {
+            background: #5a1c0c;
+            color: #FFF;
+            cursor: pointer;
+            border: 4px solid #b66d6d;
+            text-decoration: underline; }
+  body #overlay {
+    background: black;
+    opacity: .7;
+    z-index: 2; }
+    body #overlay .active {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0; }
+  body #splash-div {
+    width: 780px;
+    margin: 0px auto;
+    text-align: center; }
+    body #splash-div.active-small {
+      position: fixed;
+      top: 10px;
+      right: 70px;
+      width: auto; }
+    body #splash-div #splash-h3 {
+      margin: 15px;
+      font-size: 30px;
+      margin-top: 90px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      body #splash-div #splash-h3.active {
+        margin: 15px;
+        font-size: 20px; }
+    body #splash-div input {
+      font-size: 32px;
+      font-variant: small-caps; }
+      body #splash-div input.red-white {
+        background: #7f2811;
+        color: #FFF;
+        border-radius: 5px;
+        border: 4px solid #7f2811;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body #splash-div input.red-white:hover {
+          background: #FFF;
+          color: #7f2811;
+          border-radius: 50px;
+          text-decoration: underline; }
+      body #splash-div input.white-red {
+        background: #fff;
+        color: #7f2811;
+        font-size: 20px;
+        border-radius: 5px;
+        width: auto;
+        border: 2px solid #FFF;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body #splash-div input.white-red:hover {
+          background: #5a1c0c;
+          color: #FFF;
+          border: 2px solid #FFF;
+          text-decoration: underline; }
